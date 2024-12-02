@@ -1,0 +1,112 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.btn-primary {
+    background-color: #00f2ea;
+    border-color: #00f2ea;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00d2ca;
+    border-color: #00d2ca;
+    color: #000;
+    transform: translateY(-1px);
+}
+
+.form-control:focus {
+    border-color: #00f2ea;
+    box-shadow: 0 0 0 0.2rem rgba(0, 242, 234, 0.25);
+}
+
+.analysis-content {
+    white-space: pre-line;
+    line-height: 1.6;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+#analysisResult {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+#analysisResult.d-none {
+    display: none !important;
+}
+
+#analysisResult:not(.d-none) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #00f2ea !important;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+}
+
+.trend-card {
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.trend-card .hashtag {
+    color: #00f2ea;
+    margin-bottom: 10px;
+}
+
+.trend-card .description {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.trend-card .metrics {
+    margin: 10px 0;
+}
+
+.trend-card .badge {
+    margin-right: 5px;
+}
+
+.metrics-detail {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+} 
